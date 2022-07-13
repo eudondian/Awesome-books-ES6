@@ -1,0 +1,201 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Comic Neue', 'Courier New', Courier, monospace;
+  background-color: rgb(255, 255, 255);
+  min-height: 100vh;
+  margin: 0;
+}
+
+.mr-5 {
+  margin-right: 5px;
+}
+
+/* Styles for navbar 1 */
+.header .navbar-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid black;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 7px;
+}
+
+.header-logo {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.navbar-1 .nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.navbar-1 .nav-link {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.book-list-link.blue,
+.add-new-link.blue,
+.contact-link.blue {
+  color: blue;
+}
+
+.divider {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Styles for navbar 2 */
+.navbar-2 {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.navbar-2 .date-and-time {
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.caption {
+  font-weight: bold;
+  text-align: center;
+}
+
+.caption.hide {
+  display: none;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.book-list.active {
+  border: 5px solid black;
+  width: 95%;
+  height: 100%;
+}
+
+/* Styles for book-data (each row in the book-list) */
+.book-data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.add-container.hide {
+  display: none;
+}
+
+.caption2 {
+  font-size: 37px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.add-container .book-title,
+.add-container .book-author {
+  border: 3px solid black;
+  width: 266px;
+  height: 43px;
+}
+
+.add-container .book-author {
+  margin-top: -25px;
+}
+
+.add-container .book-title::placeholder,
+.add-container .book-author::placeholder {
+  color: black;
+  font-size: 20px;
+  font-family: 'Comic Neue', 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+.error-msg.active2 {
+  font-size: 14px;
+  color: red;
+  text-align: center;
+  position: relative;
+  top: -28px;
+}
+
+.add-btn {
+  border: 3px solid black;
+  font-size: 19px;
+  font-weight: bold;
+  box-shadow: 3px 2px 2px 0 rgba(0, 0, 0, 1);
+  position: relative;
+  left: 100px;
+  margin-top: -25px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-container.hide {
+  display: none;
+}
+
+.caption3 {
+  font-size: 37px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contact-container .text-1,
+.contact-container .contacts {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-start;
+  border: 3px solid black;
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 7px;
+  position: relative;
+  top: 550px;
+}
+
+.copyright {
+  font-size: 19px;
+}
